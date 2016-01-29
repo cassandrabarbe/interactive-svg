@@ -15,3 +15,45 @@ html {
 *, *::before, *::after {
   box-sizing: inherit;
 }
+
+#right-ear{
+
+transition: all 2s linear;
+}
+
+#left-ear{
+transition: all 2s linear;
+}
+
+#bear:hover #left-ear{
+  animation: move 1s linear infinite;
+}
+
+#bear:hover #right-ear{
+  animation: move 1s linear infinite;
+}
+
+@keyframes move{
+  0% { transform: transition(0,0); }
+  100% { transform: transition(0, -20px); }
+}
+
+#left-eye{
+transform origin: right bottom;
+animation: spin 1s infinite alternate;
+}
+
+@keyframes spin{
+0% { transform: translate(0,0); }
+100% { transform: translate(10px,0); }
+}
+
+#right-eye{
+transform origin: right bottom;
+animation: spin 1s infinite alternate;
+}
+
+
+.bear:hover .left-eye .right-eye{
+
+}
