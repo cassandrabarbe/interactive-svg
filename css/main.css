@@ -17,12 +17,15 @@ html {
 }
 
 #right-ear{
-
-transition: all 2s linear;
+  transform: translate(0px,0px);
+  transform-origin: 212px, 58px;
+  transition: all 2s linear;
 }
 
 #left-ear{
-transition: all 2s linear;
+  transform: translate(0px,0px);
+  transform-origin: 212px, 58px;
+  transition: all 2s linear;
 }
 
 #bear:hover #left-ear{
